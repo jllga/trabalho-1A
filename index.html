@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Notas</title>
+  <link rel="stylesheet" href="TESTE.CSS">
+</head>
+<body>
+  <main class="container">
+    <h1>Painel de Notas da Turma</h1>
+    <p>Nota mínima para aprovação: 6,0</p>
+
+    <label for="campoNome">Nome do aluno</label>
+    <input id="campoNome" type="text" placeholder="Digite o nome">
+
+    <label for="campoNota">Nota (0 a 10)</label>
+    <input id="campoNota" type="number" min="0" max="10"
+           step="any" placeholder="Ex.: 7.5">
+
+    <button id="botaoAdicionar" type="button">Adicionar aluno</button>
+
+    <p id="mensagem" aria-live="polite"></p>
+
+    <h2>Alunos</h2>
+    <ul id="listaAlunos"></ul>
+
+    <p id="resumo">Aprovados: 2 de 3</p>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
